@@ -22,13 +22,13 @@ class MainActivity2_task2 : AppCompatActivity() {
         button= findViewById(R.id.button)
         button.setOnClickListener {
             //Picasso.get().load(editText.text.toString()).into(imageView)
-            if (!(editText.text.isNotEmpty()) && URLUtil.isValidUrl(editText.text.toString())) {
+            if ((editText.text.isNotEmpty()) && URLUtil.isValidUrl(editText.text.toString())) {
                 showImage(editText.text.toString())
             }
             else Toast.makeText(this, getString(R.string.error), Toast.LENGTH_SHORT).show()
         }
     }
-    fun showImage (url: String) {
-        Picasso.get().load(url).into(imageView);
+    private fun showImage (url: String) {
+        Picasso.get().load(url).into(imageView)
     }
 }
