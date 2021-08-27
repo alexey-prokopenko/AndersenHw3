@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Andersen_hw3_part1</string>
+    <string name="task2">Task2</string>
+    <string name="download">download</string>
+    <string name="image_from_internet">image from internet</string>
+    <string name="hint_for_editText">entet the link for image</string>
+    <string name="error">Please check URL</string>
+</resources>
