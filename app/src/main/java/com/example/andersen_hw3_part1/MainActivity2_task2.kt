@@ -22,7 +22,7 @@ class MainActivity2_task2 : AppCompatActivity() {
         button= findViewById(R.id.button)
         button.setOnClickListener {
             //Picasso.get().load(editText.text.toString()).into(imageView)
-            if (!(editText.text.isNullOrEmpty()) && URLUtil.isValidUrl(editText.text.toString())) {
+            if (!(editText.text.isNotEmpty()) && URLUtil.isValidUrl(editText.text.toString())) {
                 showImage(editText.text.toString())
             }
             else Toast.makeText(this, getString(R.string.error), Toast.LENGTH_SHORT).show()
